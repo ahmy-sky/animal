@@ -9,6 +9,12 @@ public abstract class Animal {
     private int age;
     private String type;
 
+    public Animal(int weight, int height, int age) {
+        setWeight(weight);
+        setHeight(height);
+        setAge(age);
+    }
+
     public int getWeight() {
         return weight;
     }
@@ -45,6 +51,10 @@ public abstract class Animal {
                 ", height= " + height +
                 ", age= " + age +
                 '}';
+    }
+
+    public void traverse() {
+        System.out.println("Override");
     }
 
     public void sound() {

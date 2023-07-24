@@ -6,12 +6,8 @@ import com.sky.species.Mammals;
 public class Main {
 
     public static void main(String[] args) {
-
-        Animal elephant = new Mammals();
+        Animal elephant = new Mammals(6000, 3, 50);
         elephant.setType("elephant");
-        elephant.setAge(50);
-        elephant.setHeight(3);
-        elephant.setWeight(6000);
 
         System.out.println(elephant);
     }
